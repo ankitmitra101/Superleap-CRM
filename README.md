@@ -38,34 +38,72 @@ A single-page React application built for the Superleap Frontend Engineering int
 
 ---
 
-## Setup Instructions
 
-### 1. Install dependencies and start the mock server
+# Setup Instructions
 
-```bash id="9f6pfx"
-npm install
-npm run server
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/ankitmitra101/Superleap-CRM.git
+cd superleap-crm
 ```
 
-Ensure the mock server is running on:
+---
 
-```txt id="ojx39k"
+## 2. Install Frontend Dependencies
+
+Make sure you are in the project directory containing `package.json`, then run:
+
+```bash
+npm install
+```
+
+---
+
+## 3. Start the Mock API Server
+
+The project includes a pre-populated `db.json` file in the root directory.
+
+Open a **separate terminal window** and run:
+
+```bash
+npx json-server db.json --port 4000
+```
+
+This will start the mock backend API on:
+
+```txt
 http://localhost:4000
 ```
 
-### 2. Start the frontend development server
+---
 
-```bash id="y2h2rr"
+## 4. Start the Frontend Development Server
+
+In your main terminal window, start the React + Vite application:
+
+```bash
 npm run dev
 ```
 
-Open:
+The application will be available at:
 
-```txt id="m6c16d"
+```txt
 http://localhost:5173
 ```
 
 ---
+
+# Notes
+
+* **Self-Contained Data:**
+  The repository already includes a pre-populated `db.json` file with mock lead records. No additional database setup or seeding is required.
+
+* **Run Both Servers Concurrently:**
+  The frontend development server and the mock API server must run simultaneously in separate terminal windows for full CRUD functionality, persistence, and UI updates to work correctly.
+
+
+
 
 ## Tech Stack Chosen and Why
 
