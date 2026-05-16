@@ -181,15 +181,6 @@ At the same time, a lot of the implementation still required manual debugging an
 
 ---
 
-## Repository Checklist
-
-* [x] Source code with organized project structure
-* [x] README with architecture and design explanations
-* [x] `.gitignore` configured correctly
-* [x] Mock API integration
-* [x] URL-driven state management
-* [x] Bulk actions implementation
-* [x] Demo video included
-
+Video Demo Link - https://www.loom.com/share/967061377d2b4340ae8b172f5b2afcdf
 ---
 
